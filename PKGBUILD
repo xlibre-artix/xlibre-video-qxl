@@ -1,8 +1,8 @@
-# Maintainer: artist for Artix Linux
+# Maintainer: artist for Artix Linux and XLibre <artist@artixlinux.org>
 
 pkgname=xlibre-video-qxl
 pkgver=25.0.0
-pkgrel=4
+pkgrel=5
 pkgdesc='XLibre fork of X.Org X11 qxl video driver'
 arch=('x86_64')
 license=('MIT')
@@ -14,7 +14,7 @@ conflicts=("${_pkgname}")
 provides=("${_pkgname}")
 source=("${url}/archive/refs/tags/xlibre-${_pkgname}-${pkgver}.tar.gz")
 groups=('xlibre-drivers')
-depends+=('spice' 'libxfont2')
+depends+=('spice' 'libudev' 'libxfont2')
 makedepends+=('libcacard')
 optdepends=('python: for Xspice')
 
