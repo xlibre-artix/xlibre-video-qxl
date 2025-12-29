@@ -2,7 +2,7 @@
 
 pkgname=xlibre-video-qxl
 pkgver=25.0.0
-pkgrel=5
+pkgrel=6
 pkgdesc='XLibre fork of X.Org X11 qxl video driver'
 arch=('x86_64')
 license=('MIT')
@@ -14,7 +14,7 @@ conflicts=("${_pkgname}")
 provides=("${_pkgname}")
 source=("${url}/archive/refs/tags/xlibre-${_pkgname}-${pkgver}.tar.gz")
 groups=('xlibre-drivers')
-depends+=('spice' 'libudev' 'libxfont2')
+depends+=('spice' 'libxfont2')
 makedepends+=('libcacard')
 optdepends=('python: for Xspice')
 
