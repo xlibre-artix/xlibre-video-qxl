@@ -2,7 +2,7 @@
 
 pkgname=xlibre-video-qxl
 pkgver=25.0.0
-pkgrel=8
+pkgrel=9
 pkgdesc='XLibre fork of X.Org X11 qxl video driver'
 arch=(x86_64 aarch64)
 license=('MIT')
